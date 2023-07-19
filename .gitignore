@@ -1,0 +1,10 @@
+# Learn more about .gitignore:
+#     https://www.atlassian.com/git/tutorials/saving-changes/gitignore
+
+# Ignore node_modules folder
+node_modules/
+
+# ignore dist folder
+dist/
+
+.parcel-cache/

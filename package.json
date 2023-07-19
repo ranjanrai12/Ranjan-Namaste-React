@@ -1,0 +1,29 @@
+{
+  "name": "ranjan-namaste-react",
+  "version": "1.0.0",
+  "description": "namaste react by akshay ",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ranjanrai12/Ranjan-Namaste-React.git"
+  },
+  "keywords": [],
+  "author": "Ranjan Rai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ranjanrai12/Ranjan-Namaste-React/issues"
+  },
+  "homepage": "https://github.com/ranjanrai12/Ranjan-Namaste-React#readme",
+  "devDependencies": {
+    "parcel": "^2.9.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "browserlist": ["last 2 version"]
+}
