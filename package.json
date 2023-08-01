@@ -4,6 +4,8 @@
   "description": "namaste react by akshay ",
   "main": "index.js",
   "scripts": {
+    "start": "parcel public/index.html",
+    "build": "parcel build public/index.html",
     "test": "jest"
   },
   "repository": {

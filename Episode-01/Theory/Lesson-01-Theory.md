@@ -23,7 +23,7 @@ A: Cross-Origin Resource Sharing (`CORS`) is an HTTP-header based mechanism. mai
 
 ## Q: What is Libraby and Framework ?
 
-A: A `library` is a collection of packages that perform specific operations whereas a `framework` contains the basic flow and architecture of an application. The major difference between them is the complexity. Libraries contain a number of methods that a developer can just call whenever they write code. React js is `library` and Angular is `Framework`. The `framework` provides the flow of a software application and tells the developer what it needs and calls the code provided by the developer as required. If a `library` is used, the application calls the code from the `library`.
+A: A `library` is a collection of class and function that perform specific operations whereas a `framework` contains the basic flow and architecture of an application. Libraries contain a number of methods that a developer can just call whenever they write code. React js is `library` and Angular is `Framework`. The `framework` provides the flow of a software application and tells the developer what it needs and calls the code provided by the developer as required.
 
 ## Q: What is `React-development` and `ReactDOM` File?
 
@@ -36,6 +36,13 @@ A: The main reason to keep both file seperated is because React doesn't only wor
 ## Q: What is React Element ?
 
 A: React element is nothing but it's just a JS object.
+
+## Q: Why React known as React ?
+
+A: `React` is named React because of its ability to `react to changes in data`.
+React is called React because it was designed to be a declarative, efficient, and flexible JavaScript library for building user interfaces.
+The name `React` was chosen because the library was designed to allow developers to "react" to changes in state and data within an application, and to update the user interface in a declarative and efficient manner.
+`React` is a `JavaScript-based UI development library`. `Facebook` and an `open-source developer community` run it.
 
 ## Q: What is difference between react.development.js and react.production.js files via CDN?
 
