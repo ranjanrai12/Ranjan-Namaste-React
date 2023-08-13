@@ -158,6 +158,11 @@ A: In React, conditional rendering is the process of displaying different conten
 
 ## Q: What is `CORS`?
 
+A: `CORS` stands for "Cross-Origin Resource Sharing." It is a security feature implemented in web browsers to control and manage interactions between different origins (i.e., websites or web applications) when making requests for resources like APIs, fonts, images, or scripts.
+In simpler terms, CORS is a mechanism that allows servers to specify who is allowed to access their resources and how those resources can be accessed.
+
+- CORS involves a set of `HTTP headers` that are exchanged between the client (browser) and the server to determine whether the request is allowed or not.
+
 ## Q: Q: What is `async` and `await`?
 
 A: In React, conditional rendering is the process of displaying different content based on certain conditions
