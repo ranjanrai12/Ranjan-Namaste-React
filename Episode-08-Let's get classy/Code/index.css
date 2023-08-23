@@ -1,0 +1,379 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* font-family: PT Sans,Lato,Calibri,sans-serif;
+    overflow-x: hidden; */
+}
+/* all link CSS */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header style start */
+.header {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid;
+  align-items: center;
+  background: #ff9800;
+}
+.header > .login-logout-btn {
+  cursor: pointer;
+}
+.header > .brand-logo > img {
+  width: 7rem;
+  height: 4rem;
+  cursor: pointer;
+}
+.header > ul {
+  display: flex;
+  gap: 2rem;
+  list-style-type: none;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+.header > ul > li {
+  padding: 10px;
+}
+.header > ul > li:hover {
+  padding: 10px;
+  background: #3baaa4;
+  border-radius: 5px;
+}
+/* Header style end */
+
+/* Restaurant card css start */
+.res-card {
+  background: rgb(255, 255, 255);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+  width: 200px;
+  padding: 5px;
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+}
+.res-card:hover {
+  scale: 0.95;
+  transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+.res-card > img {
+  object-fit: contain;
+  width: 100%;
+}
+.res-card > h3 {
+  margin: 0.5rem 0;
+}
+.res-card > h5 {
+  margin: 0;
+  font-weight: lighter;
+}
+.res-card > span {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  text-align: center;
+}
+.res-card > span > h4 {
+  font-weight: bolder;
+  font-size: 12px;
+  padding: 0 2px 0;
+  margin-top: 10px;
+}
+
+.res-card > span > h4:first-child {
+  color: #fff;
+  border-radius: 5px;
+  align-items: center;
+  margin-top: 5px;
+  padding: 5px;
+  display: flex;
+}
+.res-card > span > h4:first-child .fa-star {
+  font-size: 10px;
+  padding: 2px 5px 3px 0;
+}
+/* Restaurant card css end */
+
+.res-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.input-container {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+}
+.input-container input {
+  width: 25rem;
+  padding: 0.5rem;
+}
+.input-container button {
+  cursor: pointer;
+}
+
+.footer-container {
+  display: flex;
+  font-size: large;
+  background-color: gray;
+  padding: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  background: #d4a346;
+  margin-top: 0.5rem;
+}
+
+/*Shimmer Card CSS Start*/
+.shimmer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+.shimmer-card {
+  flex-basis: 250px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-color: #d3d5df;
+  box-shadow: 0 4px 7px 0 rgb(218 220 230 / 60%);
+}
+.shimmer-title {
+  width: 60%;
+  margin-top: 10px;
+}
+.shimmer-tags {
+  width: 80%;
+  margin-top: 4px;
+}
+.shimmer-details {
+  width: 100%;
+  margin-top: 18px;
+}
+.shimmer-container .shimmer-img {
+  height: 144px;
+  width: 230px;
+}
+/*Shimmer Card CSS End*/
+
+/* Shimmer Menu Card CSS Start */
+.restaurant-summary .shimmer-img {
+  height: 144px;
+  width: 230px;
+}
+
+.shimmer-menu-card {
+  display: flex;
+  justify-content: space-evenly;
+  width: 848px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-color: #d3d5df;
+  box-shadow: 0 4px 7px 0 rgb(218 220 230 / 60%);
+}
+.shimmer-item-details {
+  width: 438px;
+}
+
+.shimmer-img-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: 118px;
+  height: 150px;
+}
+.shimmer-img-wrapper .shimmer-img {
+  width: 118px;
+  height: 96px;
+}
+
+.shimmer-img-wrapper .shimmer-btn {
+  width: 94px;
+  height: 34px;
+  margin-top: 10px;
+}
+
+.shimmer-w60 {
+  width: 60%;
+  margin-top: 10px;
+}
+
+.shimmer-w40 {
+  width: 40%;
+  margin-top: 10px;
+}
+
+.shimmer-w20 {
+  width: 20%;
+  margin-top: 4px;
+}
+/* Shimmer Menu Card CSS End */
+
+/*Animation to Shimmer Component Card and Menu card Start*/
+.stroke {
+  height: 15px;
+  background: #777;
+}
+.stroke-color {
+  background: #777;
+}
+.animate {
+  animation: shimmer 3s;
+  animation-iteration-count: infinite;
+  background: linear-gradient(to right, #e6e6e6 5%, #cccccc 25%, #e6e6e6 35%);
+  background-size: 1000px 100%;
+}
+@keyframes shimmer {
+  from {
+    background-position: -1000px 0;
+  }
+  to {
+    background-position: 1000px 0;
+  }
+}
+/*Animation to Shimmer Component Card and Menu card End*/
+
+/* Error page CSS Start */
+.error-page {
+  text-align: center;
+  height: 100vh;
+  width: auto;
+}
+.error-page .error-data {
+  padding: 10px 0px;
+}
+
+.error-page .error-back-home {
+  padding: 20px;
+}
+.error-page .error-back-home a {
+  text-decoration: none;
+  background-color: #ff9800;
+  color: black;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.error-page .error-back-home a:hover {
+  background-color: rgb(221, 210, 221);
+}
+/* Error page Css end */
+
+/* Restaurant Menu and Menu items page Css start */
+.restaurant-menu-container .restaurant-menu-details {
+  background: navajowhite;
+  display: flex;
+  gap: 0.5rem;
+  padding: 5px;
+  justify-content: center;
+}
+
+.restaurant-menu-details img {
+  width: 250px;
+  height: 180px;
+}
+.restaurant-menu-details > .resturant-details-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.resturant-details-container > .restaurant-info {
+  display: flex;
+  margin-top: auto;
+  gap: 0.5rem;
+  padding: 5px;
+  align-items: center;
+}
+.restaurant-info > .rating {
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.restaurant-menu-items {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  max-width: 800px;
+  min-height: 800px;
+  margin: 20px auto 0;
+}
+.restaurant-menu-items .item-header-title {
+  font-weight: 800;
+  font-size: 1rem;
+  margin: 5px;
+  height: 27px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.item-header-title > span {
+  font-size: 25px;
+}
+.item-card-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+.item-card-wrapper > .details-container {
+  max-width: calc(100% - 144px);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.details-container > .info-name {
+  margin-right: 4px;
+  font-size: 1.22rem;
+  font-weight: 500;
+  word-break: break-word;
+}
+.item-card-wrapper > .item-image-container > img {
+  width: 120px;
+  height: 95px;
+}
+/* Restaurant Menu and Menu items page Css end */
+
+/* Login page css start*/
+.login-form {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #ff9800;
+}
+.login-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 500px;
+  padding: 3rem;
+  align-items: center;
+}
+.login-content > input {
+  padding: 1rem;
+  border-radius: 5px;
+  width: 100%;
+}
+.login-content > .action {
+  display: flex;
+  width: 100%;
+}
+.action > .login-btn {
+  flex-grow: 1;
+  padding: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  background: lightblue;
+}
+/* Login page css end */
+
+/* user page css start */
+.user-card {
+  padding: 10px;
+  border: 1px solid;
+}
+/* user page css end */
