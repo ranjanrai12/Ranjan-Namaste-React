@@ -1,22 +1,23 @@
 ## Namaste React Course by Akshay Saini
 
-# Chapter 09 - Optimizing our App
+# Chapter 11 - Data is the new oil
 
 ## Theory Assignment:
 
-- When and why do we need `lazy()`?
-- What is `suspense`?
-- Why we got this `error`: A component was suspended while responding to `synchronous input`. This will cause the `UI` to be replaced with a `loading indicator`. To `fix this`, `updates that suspend` should be wrapped with `start transition`? How does `suspense fix` this error?
-- `Advantages and Disadvantages` of using this `code splitting pattern`?
-- When `do we and why do we need suspense`?
+- What is `prop drilling` ?
+- What is `lifting state up` ?
+- What are `Context Provider` and `Context Consumer` ?
+- If you don't pass a `value to the provider` does it takes the `default value` ?
 
 ## Coding Assignment:
 
-- Create your `custom hooks`.
-- Try out `lazy and suspense`
-- Make your `code clean`.
+- Practice React Context with code examples
+- Try out Nested Contexts
 
 ## References:
 
-- [React Custom Hooks](https://reactjs.org/docs/hooks-custom.html)
-- [React lazy](https://beta.reactjs.org/reference/react/lazy)
+- [Lifting state up](https://react.dev/learn/sharing-state-between-components#lifting-state-up-by-example)
+
+- [Context Hooks](https://react.dev/reference/react#context-hooks)
+
+- [Create Context](https://react.dev/reference/react/createContext)

@@ -1,11 +1,11 @@
 import { useContext } from "react";
 import { IMG_URL } from "../../Utils/constant";
 import { AiFillStar } from "react-icons/ai";
-import UserContext from "../../Context/UserContext";
+// import UserContext from "../../Context/UserContext";
 
 const ResturantCard = (props) => {
   const { resData } = props;
-  const { userName } = useContext(UserContext);
+  // const { userName } = useContext(UserContext);
 
   const {
     cloudinaryImageId,
@@ -41,14 +41,12 @@ const ResturantCard = (props) => {
         </div>
         <h4>{deliveryTime}</h4>
         <h4>{costForTwo ? costForTwo : "₹200 for two"}</h4>
-        <h5>{userName}</h5>
       </span>
       <div className="card-details"></div>
     </div>
   );
 };
 
-// Example of Higher order function
 export const withPromotedLabel = (ResturantCard) => {
   return (props) => {
     return (
